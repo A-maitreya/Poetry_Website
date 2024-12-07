@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f8ff; /* Light blue background */
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: #004080; /* Dark blue header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sections */
+  section {
+    padding: 40px 0;
+  }
+  
+  .home {
+    background: #d9ebff; /* Soft blue background */
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .home h2 {
+    color: #004080;
+  }
+  
+  .quote {
+    background: #e6f2ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote h3 {
+    color: #004080;
+  }
+  
+  /* Poems */
+  .poems {
+    background: #f4f9ff;
+  }
+  
+  .poems h2 {
+    color: #004080;
+    text-align: center;
+  }
+  
+  #search-bar {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #004080;
+    border-radius: 5px;
+  }
+  
+  .categories button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .categories button:hover {
+    background: #0066cc; /* Lighter blue on hover */
+  }
+  
+  .poem-list article {
+    border: 1px solid #cce6ff;
+    background: #e6f2ff;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .poem-list article:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Poets */
+  .poets {
+    background: #d9ebff;
+  }
+  
+  .poets h2 {
+    color: #004080;
+    text-align: center;
+  }
+  
+  .poet {
+    text-align: center;
+    padding: 20px;
+    background: #e6f2ff;
+    border-radius: 5px;
+    margin: 15px;
+    border: 1px solid #cce6ff;
+  }
+  
+  .poet img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact */
+  .contact {
+    background: #f4f9ff;
+  }
+  
+  form label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #004080;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #004080;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #0066cc;
+  }
+  
+  /* Footer */
+  footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

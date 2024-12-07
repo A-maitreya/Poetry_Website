@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetry By Shivanshu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Poetry By Shivanshu</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#poems">Poems</a></li>
+          <li><a href="#poets">Poets</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="container">
+      <h2>Welcome to Poetry By Shivanshu</h2>
+      <p>Immerse yourself in the world of poetry. Explore, inspire, and connect.</p>
+      <div id="quote-of-the-day" class="quote">
+        <h3>Quote of the Day</h3>
+        <p>"The woods are lovely, dark and deep..."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Poems Section -->
+  <section id="poems" class="poems">
+    <div class="container">
+      <h2>Explore Poems</h2>
+      <div class="categories">
+        <button onclick="filterPoems('All')">All</button>
+        <button onclick="filterPoems('भक्ति')">भक्ति(Devotional)</button>
+        <button onclick="filterPoems('प्रेम')">प्रेम</button>
+        <button onclick="filterPoems('भावनात्मक')">भावनात्मक</button>
+        <button onclick="filterPoems('विरह')">विरह</button>
+      </div>
+      <div id="poem-list" class="poem-list">
+        <article data-category="भक्ति">
+          <h3>Title - महारास <br>
+              Description - आत्मा और परमात्मा का मिलना ही महारास है।
+          </h3>
+          <p><strong>Category:</strong> भक्ति  | <strong>By:</strong> Shivanshu Tripathi</p>
+          <p>कृष्ण चंद्र रूप आज चांँदनी के अंग संग,</p>
+            <p>प्रेम का पीयूष आज नभ से बरसाएंँगे।</p>
+            <p>वृंदावन चंद आज गोपिन के संग देखो,</p>
+            <p>आध्यात्मिक रास, महारास वो रचाएंँगे।।</p>
+            <br>
+            <p>छाएगा प्रेम आज, वैर मिटेगा मन का,</p>
+            <p>गोपियों की मनसा, मनमोहन पुरायेंगे।</p>
+            <p>राधा जू संग आज सखियों भी सारी हैं,</p>
+            <p>और तो महादेव भी गोपी बन कर आयेंगे।।</p>
+            <br>
+            <p>गोपियों के व्रत तप को शक्ति का वरदान मिला,</p>
+            <p>आज कृष्ण शक्ति के वरदान को निभाएंँगे।</p>
+            <p>विरह का दुख भूल आज सब सुख से नाचेंगे,</p>
+            <p>रासेश्वर नंद कुंँवर, रास में नचाएंँगे।।</p>
+            
+        </article>
+        
+        <!-- <article data-category="Love">
+          <h3>Title - महारास <br>
+              Description - आत्मा और परमात्मा का मिलना ही महारास है।
+          </h3>
+          <p><strong>Category:</strong> भक्ति(Devotional) | <strong>By:</strong> Shivanshu Tripathi</p>
+          <p>A heart that burns forever...</p>
+        </article> -->
+        
+        <article data-category="प्रेम">
+            <h3>Title - यादें  <br>
+                Description - मन अपनी अनंत यादों में से किसी एक याद को चुनने में संकोच कर रहा है, क्योंकि अंततः हर याद दुख ही देती है।।
+            </h3>
+          <p><strong>Category:</strong> प्रेम | <strong>By:</strong> Shivanshu Tripathi/p>
+          <p>किसकी यादें याद करूं?<br>
+<br>
+            जो यादें यादों में मेरी,<br>
+            उनमें से किसको आज चुनूं?<br>
+            मैं सपने बुनता रहता हूं,<br>
+            मैं किसकी यादें आज बुनूँ?<br>
+            <br>
+            जब प्रेम याद आता है मुझे,<br>
+            क्षण भर सुख से मुस्काता हूँ।<br>
+            फिर विरह याद आ जाता है,<br>
+            और दुख में रात बिताता हूँ।।<br>
+            <br>
+            अपनों को याद करो तो फिर,<br>
+            थोड़ा उदास होता है मन।<br>
+            क्या उन्हें खुशी दे पाऊंगा,<br>
+            मन में फिर रहती है उलझन।।<br>
+            <br>
+            फिर किसको याद करे ये मन,<br>
+            मैं सपने किसके आज बुनूँ?<br>
+            सबकी यादों में सुख दुख है,<br>
+            मैं किसके यादें याद करूं??<br>
+            </p>
+        </article>
+        
+        <article data-category="भावनात्मक">
+          <h3>Title - मां, त्योहार और इंतजार <br>
+              Description - त्योहार के समय मां इंतजार कर रही है अपने आंखों के तारों का ताकि इतने दिनों से जो बातें वो किसी से नहीं कर पाई है, वो अपने बच्चों से कर सके।।
+          </h3>
+          <p><strong>Category:</strong> भावनात्मक | <strong>By:</strong> Shivanshu Tripathi</p>
+          <p>मांँ इंतजार कर रही थी,<br>
+            त्योहार में मेरे घर आने का,<br>
+            मानो मुझसे ही त्योहार हो।<br>
+            <br>
+            मांँ लंबे समय से इंतजार कर रही थी,<br>
+            कि मैं आऊंँ तो साथ में खुशियांँ ले आऊंँ,<br>
+            और कुछ क्षण सुख के साथ बिताऊंँ।<br>
+            <br>
+            मांँ इंतजार कर रही थी,<br>
+            कि मैं आऊंँ तो बहुत सारी बातें करूंँ,<br>
+            और वो भी अपने सुख दुख बांँट सके मुझसे।<br>
+            <br>
+            मांँ का इंतजार खत्म हुआ,<br>
+            लेकिन अब एक और इंतजार शुरू होगा,<br>
+            जो अगली साल त्योहार पर खत्म होगा।।<br>
+            </p>
+        </article>
+
+        <article data-category="प्रेम">
+          <h3>Title - वर्षों का प्रेम, वर्षों बाद मिला <br>
+              Description - प्रेमी अपने प्रिय के मिलने पर काफी प्रसन्न है क्योंकि यह प्रिय उसे वर्षों बाद प्राप्त हुआ है।।
+          </h3>
+          <p><strong>Category:</strong> प्रेम | <strong>By:</strong> Shivanshu Tripathi</p>
+          <p>तुम लौटे प्रिय, मेरी खातिर,<br>
+            सुख से मेरा हृदय खिला है।<br>
+            वर्षों से जो प्रेम मेरा,<br>
+            वो इतने वर्षों बाद मिला है।।<br>
+            <br>
+            तुम पहले जैसे सुंदर,<br>
+            पहले सी है मुस्कान तेरी।<br>
+            नज़र मेरी ना लग जाए,<br>
+            आ पहले नज़र उतारूंँ तेरी।<br>
+            तुम्हें देख, मन का मुरझाया उपवन<br>
+            फिर से आज खिला है।<br>
+            वर्षों से जो प्रेम मेरा,<br>
+            वो इतने वर्षों बाद मिला है।।<br>
+            <br>
+            सोचता है मन सब कुछ कह दे,<br>
+            हंँस ले, रो ले, नाच के थक ले।<br>
+            फिर मैं तुझको प्रेम परोसूं,<br>
+            और तू उसको प्रेम से चख ले।<br>
+            विस्मित मन कह रहा है सबसे,<br>
+            देखो सब्र का यही सिला है।<br>
+            वर्षों से जो प्रेम मेरा,<br>
+            वो इतने वर्षों बाद मिला है।।<br></p>
+        </article>
+
+        <article data-category="Love">
+          <h3>Title - महारास <br>
+              Description - आत्मा और परमात्मा का मिलना ही महारास है।
+          </h3>
+          <p><strong>Category:</strong> भक्ति(Devotional) | <strong>By:</strong> Shivanshu Tripathi</p>
+          <p>A heart that burns forever...</p>
+        </article>
+        <!-- Add more poems -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Poets Section -->
+  <section id="poets" class="poets">
+    <div class="container">
+      <h2>Meet the Poets</h2>
+      <div class="poet-profiles">
+        <div class="poet">
+          <img src="poet.png" alt="Poet Image">
+          <h3>Shivanshu Tripathi</h3>
+          <p>Shivanshu is a contemporary poet who writes about nature and emotions...</p>
+        </div>
+        <!-- Add more poets -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aditya Maitreya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
